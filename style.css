@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+header {
+    display: flex;
+    background-color: #999;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.logoHeader {
+    width: 120px;
+    margin: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.headerList {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+#signUp {
+    padding: 10px 20px 10px 20px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+#letsGoSearch {
+    padding: 5px 10px 5px 10px;
+    background-color: #E00;
+    border-radius: 10px;
+    border-color: #999;
+}
+
+#searchField {
+    padding: 2px 10px 5px 10px;
+    border-radius: 10px;
+    border-color: #999;
+}
+
+.swiper {
+    height: 500px;
+    background-color: #555;
+    text-align: center;
+}
+
+.swiper img {
+    height: 440px;
+    margin-top: 10px;
+}
+.about {padding-bottom: 20px;}
+h2 {
+    margin: 20px;
+}
+
+.locations {
+    background-color: #555;
+}
+
+.locations h2 {color: whitesmoke; font-weight: 500; padding: 20px 0 0px 0;}
+
+.cards img {
+    width: 200px;
+    border-radius: 5px;
+    ;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.picAndTextJS {display: flex; gap: 20px; padding: 10px 50px 30px 50px;}
