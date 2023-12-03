@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/accordion-js@latest/dist/accordion.min.css">
+	<link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header>
@@ -20,7 +20,7 @@
             <li><a href="#">О нас</a></li>
             <li id="search"><input name="searchField" placeholder="Поиск..." id="searchField"/></li>
 			<li><a href="#" id="letsGoSearch"><img src="img/search.svg" alt=""></a></li>
-            <li id="signUp"><a href="#">Войти</a></li>
+			<li id="signUp"><a href="#" onclick="alert('не тыкай сюда >:(');">Войти</a></li>
         </ul>
     </header>
     <main>
@@ -42,7 +42,8 @@
             <h2>О нас</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum dignissimos temporibus quis distinctio, officia unde possimus, molestiae nemo id odio aperiam saepe a quae ipsa quo non consequuntur commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, nesciunt! Esse quasi id molestiae modi excepturi quam tempora quaerat ratione minima! Mollitia dolor error, pariatur alias voluptatibus in corrupti veniam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorem atque, eos fuga ullam quas asperiores laudantium nisi expedita nesciunt error officia omnis vitae dolores quam temporibus modi odit consequatur!</p>
         </section>
-        <section class="nowInSmolensk">
+		<!-- @acid: Никит нахера; это *вообще* не по теме сайта, еще и посерёдке страницы -->
+        <!-- <section class="nowInSmolensk">
             <h2>Сейчас в Смоленске</h2>
             <div class="infoWeather">
                 <div class="time">Виджет времени</div>
@@ -51,61 +52,48 @@
                     <div class="weatherRain">Виждет осадков</div>
                 </div>
                 <div class="calendar">По приколу календарь можно</div>
-            </div>
-        </section>
+			</div>
+		</section> -->
         <section class="locations">
             <h2>На туре вы посетите:</h2>
             <ul class="cards">
-                <li class="card"><img src="img/minipic_cafe/mini1.jpg" alt="img"/><h3>Cafe Aboba</h3><p>Описание этого места</p><button>Подробнее</button></li>
-                <li class="card"><img src="img/minipic_cafe/mini2.jpg" alt="img"/><h3>Cafe Aboba</h3><p>Описание этого места</p><button>Подробнее</button></li>
-                <li class="card"><img src="img/minipic_cafe/mini3.jpg" alt="img"/><h3>Cafe Aboba</h3><p>Описание этого места</p><button>Подробнее</button></li>
-                <li class="card"><img src="img/minipic_cafe/mini4.jpg" alt="img"/><h3>Cafe Aboba</h3><p>Описание этого места</p><button>Подробнее</button></li>
-                <li class="card"><img src="img/minipic_cafe/mini5.jpg" alt="img"/><h3>Cafe Aboba</h3><p>Описание этого места</p><button>Подробнее</button></li>
-                <li class="card"><img src="img/minipic_cafe/mini6.jpg" alt="img"/><h3>Cafe Aboba</h3><p>Описание этого места</p><button>Подробнее</button></li>
-                <li class="card"><img src="img/minipic_cafe/mini7.jpg" alt="img"/><h3>Cafe Aboba</h3><p>Описание этого места</p><button>Подробнее</button></li>
-                <li class="card"><img src="img/minipic_cafe/mini8.jpg" alt="img"/><h3>Cafe Aboba</h3><p>Описание этого места</p><button>Подробнее</button></li>
-                <li class="card"><img src="img/minipic_dos/mini9.jpg" alt="img"/><h3>Cafe Aboba</h3><p>Описание этого места</p><button>Подробнее</button></li>
-                <li class="card"><img src="img/minipic_dos/mini15.jpg" alt="img"/><h3>Cafe Aboba</h3><p>Описание этого места</p><button>Подробнее</button></li>
-                <li class="card"><img src="img/minipic_dos/mini6_1812.jpg" alt="img"/><h3>Cafe Aboba</h3><p>Описание этого места</p><button>Подробнее</button></li>
-                <li class="card"><img src="img/minipic_dos/mini12.jpg" alt="img"/><h3>Cafe Aboba</h3><p>Описание этого места</p><button>Подробнее</button></li>
+                <li class="card"><img src="img/minipic_cafe/mini1.jpg" alt="img"/><p>Cafe Aboba</p></li>
+                <li class="card"><img src="img/minipic_cafe/mini2.jpg" alt="img"/><p>Cafe Aboba</p></li>
+                <li class="card"><img src="img/minipic_cafe/mini3.jpg" alt="img"/><p>Cafe Aboba</p></li>
+                <li class="card"><img src="img/minipic_cafe/mini4.jpg" alt="img"/><p>Cafe Aboba</p></li>
+                <li class="card"><img src="img/minipic_cafe/mini5.jpg" alt="img"/><p>Cafe Aboba</p></li>
+                <li class="card"><img src="img/minipic_cafe/mini6.jpg" alt="img"/><p>Cafe Aboba</p></li>
+                <li class="card"><img src="img/minipic_cafe/mini7.jpg" alt="img"/><p>Cafe Aboba</p></li>
+                <li class="card"><img src="img/minipic_cafe/mini8.jpg" alt="img"/><p>Cafe Aboba</p></li>
+                <li class="card"><img src="img/minipic_dos/mini9.jpg" alt="img"/><p>Cafe Aboba</p></li>
+                <li class="card"><img src="img/minipic_dos/mini15.jpg" alt="img"/><p>Cafe Aboba</p></li>
+                <li class="card"><img src="img/minipic_dos/mini6_1812.jpg" alt="img"/><p>Cafe Aboba</p></li>
+                <li class="card"><img src="img/minipic_dos/mini12.jpg" alt="img"/><p>Cafe Aboba</p></li>
             </ul>
         </section>
         <section class="aboutPlace">
             <h2>О месте</h2>
-            <div class="picAndTextJS">
+            <div class="placeWrapper">
                 <img src="img/minipic_other/mini1.jpg" width="500" height="400"/>
-                <div clas="onlyTextJS">
-                    <div style="display: flex; padding-bottom: 20px; gap: 20px;" class="namePlaceJS">
-                        <h2>Название: </h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit itaque, rerum error porro corrupti, fugiat quibusdam voluptatum vel commodi magni tempora, provident nesciunt! Explicabo quae similique necessitatibus, sequi consequatur autem!</p>
-                    </div>
-                    <div class="descriptonJS" style="display: flex; padding-bottom: 20px; gap: 20px;">
-                        <h2>Описание: </h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime adipisci obcaecati ipsam excepturi possimus officia, voluptas modi cupiditate similique minus ducimus, eveniet dolorem, corrupti repudiandae. Aspernatur aperiam accusantium quaerat.</p>
-                    </div>
-                    <div class="aboutPlaceTextJS" style="display: flex; gap: 20px; padding-bottom: 20px;">
-                        <h2>Подробнее: </h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime adipisci obcaecati ipsam excepturi possimus officia, voluptas modi cupiditate similique minus ducimus, eveniet dolorem, corrupti repudiandae. Aspernatur aperiam accusantium quaerat.</p>
-                    </div>
-                    <div class="aboutPlaceTextJS" style="display: flex; gap: 20px;">
-                        <h2>Оценки: </h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime adipisci obcaecati ipsam excepturi possimus officia, voluptas modi cupiditate similique minus ducimus, eveniet dolorem, corrupti repudiandae. Aspernatur aperiam accusantium quaerat.</p>
-                    </div>
-                </div>
+                <div>
+                    <div id="placeName">Cafe "Aboba"</div>
+                    <div id="placeDescription">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime adipisci obcaecati ipsam excepturi possimus officia, voluptas modi cupiditate similique minus ducimus, eveniet dolorem, corrupti repudiandae. Aspernatur aperiam accusantium quaerat.</div>
+          			<a href="javascript:void();">Посмотреть на карте</a>
+				</div>
             </div>
         </section>
         <section class="mapBlock">
             <h2>Карта</h2>
-            <div class="map"><h2>Не теряю надежду что тут будет карта</h2></div>
+            <div class="map"><h2>\(^Д^)/</h2></div>
         </section>
 		<section class="more">
 			<h2>Дополнительные материалы</h2>
 			<div class="swiper swiperSecond">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=NOnKUGaR9b8WWSQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-					<div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=NOnKUGaR9b8WWSQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-					<div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=NOnKUGaR9b8WWSQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-					<div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=NOnKUGaR9b8WWSQw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+					<div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/EAZ3urYgO8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+					<div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/rdVcT09dEf8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+					<div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/R1tgBxuRqZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+					<div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/8EwJ9XvDB8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 				</div>
 
 				<div class="swiper-pagination"></div>
@@ -127,22 +115,28 @@
         </section>
         <section class="questions">
             <h2>Часто задаваемые вопросы</h2>
-
-        </section>
-        
+			<details>
+			    <summary>Вопрос</summary>
+				<div>Ответ</div>
+			</details>
+			<details>
+			    <summary>Вопрос</summary>
+				<div>Ответ</div>
+			</details>
+			<details>
+			    <summary>Вопрос</summary>
+				<div>Ответ</div>
+			</details>
+		</section>
     </main>
     <footer>
         <img src="img/logo.png" alt="Logo" class="logoHeader">
         <ul class="headerList">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="index.html">Места</a></li>
-            <li><a href="index.html">О нас</a></li>
-            <li id="search"><input name="searchField" placeholder="Поиск..." id="searchField"/></li>
-            <li><a href="#" id="letsGoSearch"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></a></li>
-            <li id="signUpBottom"><a href="#">Войти</a></li>
-        </ul>
+        	<p>Сайт разработан Егором Горгуном (@thisisignitedoreo) и Никитой Федосовым (@bolgaro4ka)</p>
+		</ul>
     </footer>
-    <script src="scripts/search.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="scripts/search.js"></script>
     <script src="scripts/swiper.js"></script>
     <script src="scripts/main.js"></script>
 </body>

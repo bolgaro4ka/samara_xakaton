@@ -132,20 +132,6 @@ header a {
 	border-radius: 5px;
 }
 
-.aboutPlace {
-	text-align: center;
-}
-
-.aboutPlace>h2 {
-	text-align: center;
-	margin: 20px 0;
-	font-size: 32px;
-}
-
-
-
-
-
 .cards {
 	display: flex;
 	width: 1000px;
@@ -172,10 +158,49 @@ header a {
 	margin-top: 8px;
 }
 
-.picAndTextJS {
+.aboutPlace {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.aboutPlace > h2 {
+	text-align: center;
+	margin: 20px 0;
+	font-size: 32px;
+}
+
+.placeWrapper {
 	display: flex;
 	gap: 20px;
-	padding: 10px 50px 30px 50px;
+	width: 1000px;
+}
+
+.placeWrapper > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.placeWrapper a {
+	padding: 8px;
+	border-radius: 8px;
+	background-color: #77f;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.placeWrapper img {
+	border-radius: 16px;
+}
+
+#placeName {
+	font-size: 48px;
+}
+
+#placeDescription {
+	font-size: 24px;
 }
 
 .telegram {
@@ -208,6 +233,11 @@ header a {
 	flex-direction: column;
 }
 
+.map h2 {
+	font-family: monospace;
+	font-size: 256px;
+}
+
 footer {
 	display: flex;
 	align-items: center;
@@ -215,10 +245,9 @@ footer {
 	padding-left: 20px;
 	padding-right: 20px;
 	background-color: #000;
-
 }
 
-footer a {
+footer p {
 	color: whitesmoke !important;
 	text-decoration: none;
 }
@@ -239,23 +268,33 @@ footer a {
 	height: 400px;
 	background-color: #eee;
 	padding: 20px;
+	margin-top: 32px;
 }
 
-.mapBlock>h2 {
+.mapBlock > h2 {
 	font-size: 32px;
 }
 
-.more>h2 {
+.more > h2 {
 	text-align: center;
 	font-size: 32px;
+	margin-bottom: 24px;
 }
 
 .more {
+	color: #fff;
+	background: rgb(50,50,50);
+	background: linear-gradient(135deg, rgba(50,50,50,1) 0%, rgba(0,0,0,1) 100%);
 	padding: 20px;
 }
 
 .swiperSecond {
 	text-align: center;
+	height: 345px;
+}
+
+.swiperSecond .swiper-slide iframe {
+	border-radius: 16px;
 }
 
 .telegramTexts:first-child {
@@ -263,30 +302,47 @@ footer a {
 }
 
 .questions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background-color: #eee;
 	height: 500px;
 	padding: 20px;
 }
 
-.questions>h2 {
+.questions > h2 {
 	text-align: center;
 	font-size: 32px;
 }
 
-.nowInSmolensk {
-	text-align: center;
-	background-color: burlywood;
-	height: 400px;
-	padding: 20px;
+details summary {
+	list-style-type: '⊕ ';
 }
 
-.nowInSmolensk>h2 {
+details[open] summary {
+	list-style-type: '⊖ ';
+}
+
+details {
+	border: 1px solid #aaa;
+	width: 800px;
+	border-radius: 8px;
+	padding: 4px;
+	margin-bottom: 4px;
+}
+
+summary {
+	cursor: pointer;
 	font-size: 32px;
 }
 
-.infoWeather {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 80%;
+details[open] summary {
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
 }
+
+details div {
+	font-size: 24px;
+}
+
