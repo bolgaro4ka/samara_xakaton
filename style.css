@@ -1,12 +1,15 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Roboto;
+    font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+	--swiper-pagination-color: #fff;
 }
 
 header {
     display: flex;
-    background-color: #999;
     align-items: center;
     justify-content: space-between;
     padding-left: 20px;
@@ -35,55 +38,105 @@ header a {
     align-items: center;
 }
 
+.headerList li > a {
+	color: #000;
+}
+
 #signUp {
     padding: 10px 20px 10px 20px;
     background-color: black;
     border-radius: 20px;
+	border: none;
 }
 
-#letsGoSearch {
-    padding: 5px 10px 5px 10px;
-    background-color: #E00;
-    border-radius: 10px;
-    border-color: #999;
+#signUp > a {
+	color: #fff;
 }
 
 #searchField {
     padding: 2px 10px 5px 10px;
     border-radius: 10px;
-    border-color: #999;
+	border: 2px solid black;
 }
 
 .swiper {
-    height: 500px;
-    background-color: #555;
-    text-align: center;
+    height: 480px;
+}
+
+.topSlider {
+    padding-top: 16px;
+	background: rgb(255,111,95);
+	background: linear-gradient(135deg, rgba(255,111,95,1) 0%, rgba(255,98,138,1) 100%);
+	z-index: -3;
+	box-shadow: 0 0 16px 16px #eee;
+	text-align: center;
+}
+
+.heading div {
+	color: #fff;
+	font-size: 16px;
+}
+
+.heading div:last-child {
+	font-size: 32px;
 }
 
 .swiper img {
     height: 440px;
     margin-top: 10px;
+	border-radius: 16px;
 }
-.about {padding-bottom: 20px;}
-h2 {
-    margin: 20px;
+
+.about {
+	padding-bottom: 20px;
+}
+
+.about > h2 {
+	text-align: center;
+	margin: 20px 0;
+	font-size: 32px;
+}
+
+.about > p {
+	text-align: center;
+	width: 800px;
+	margin: 0 auto;
+	font-size: 16px;
 }
 
 .locations {
-    background-color: #555;
+	padding-bottom: 20px;
+	background: #eee;
 }
 
-.locations h2 {color: whitesmoke; font-weight: 500; padding: 20px 0 0px 0;}
+.locations > h2 {
+	text-align: center;
+	margin: 20px 0;
+	font-size: 32px;
+}
+
+.locations > p {
+	text-align: center;
+	width: 800px;
+	margin: 0 auto;
+	font-size: 16px;
+}
+
+.locations h2 {
+	font-weight: 500;
+	padding: 20px 0 0px 0;
+}
 
 .cards img {
     width: 200px;
     border-radius: 5px;
-    ;
 }
 
 .cards {
     display: flex;
-    flex-wrap: wrap;
+	width: 1000px;
+	margin: 0 auto;
+	flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
     gap: 10px;
@@ -91,9 +144,22 @@ h2 {
 }
 
 .card {
-    background-color: whitesmoke;
+	display: flex;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 3px solid #ddd;
     border-radius: 10px;
     padding: 10px;
+	padding-bottom: 8px;
 }
 
-.picAndTextJS {display: flex; gap: 20px; padding: 10px 50px 30px 50px;}
+.card p {
+	margin-top: 8px;
+}
+
+.picAndTextJS {
+	display: flex;
+	gap: 20px;
+	padding: 10px 50px 30px 50px;
+}

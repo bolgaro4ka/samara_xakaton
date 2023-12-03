@@ -4,57 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ТурВектор</title>
-    <link rel="stylesheet" href="style.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header>
         <img src="img/logo.png" alt="Logo" class="logoHeader">
         <ul class="headerList">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="index.html">Места</a></li>
-            <li><a href="index.html">О нас</a></li>
-            <li id="search">
-                <input name="searchField" id="searchField"/>
-                <button name="letsGoSearch" id="letsGoSearch">Найти</button>
-                <script src="scripts/search.js"></script>
-            </li>
-            <li id="signUp"><a href="index.html">Войти</a></li>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Места</a></li>
+            <li><a href="#">О нас</a></li>
+            <li id="search"><input name="searchField" placeholder="Поиск..." id="searchField"/></li>
+			<li><a href="#" id="letsGoSearch"><img src="img/search.svg" alt=""></a></li>
+            <li id="signUp"><a href="#">Войти</a></li>
         </ul>
     </header>
     <main>
         <section class="topSlider">
-            <div class="swiper">
-                <!-- Additional required wrapper -->
+			<div class="heading">
+				<div>Только посмотрите на эти достопримечательности...</div>
+				<div>Все их вы сможете посетить их на нашем туре по Смоленску!</div>
+			</div>
+            <div class="swiperFirst swiper">
                 <div class="swiper-wrapper">
-                  <!-- Slides -->
-                  <div class="swiper-slide"><img src="img/pic_for_slider/dostoprimechatelnosti-smolenska.jpg" alt="pictire"/><p>Посмотрите на Смоленск</p></div>
-                  <div class="swiper-slide"><img src="img/pic_for_slider/optimize.webp" alt="pictire"/><p>Посмотрите на Смоленск</p></div>
-                  <div class="swiper-slide"><img src="img/pic_for_slider/scale_1200.jpeg" alt="pictire"/><p>Посмотрите на Смоленск</p></div>
-                  ...
+                  <div class="swiper-slide"><img src="img/pic_for_slider/dostoprimechatelnosti-smolenska.jpg" alt="pictire"/></div>
+                  <div class="swiper-slide"><img src="img/pic_for_slider/optimize.webp" alt="pictire"/></div>
+                  <div class="swiper-slide"><img src="img/pic_for_slider/scale_1200.jpeg" alt="pictire"/></div>
                 </div>
-                <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
-              
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-              
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
               </div>
-            <script src="scripts/swiper.js"></script>
         </section>
         <section class="about">
             <h2>О нас</h2>
-            <div class="wrapper"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum dignissimos temporibus quis distinctio, officia unde possimus, molestiae nemo id odio aperiam saepe a quae ipsa quo non consequuntur commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, nesciunt! Esse quasi id molestiae modi excepturi quam tempora quaerat ratione minima! Mollitia dolor error, pariatur alias voluptatibus in corrupti veniam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorem atque, eos fuga ullam quas asperiores laudantium nisi expedita nesciunt error officia omnis vitae dolores quam temporibus modi odit consequatur!</p></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsum dignissimos temporibus quis distinctio, officia unde possimus, molestiae nemo id odio aperiam saepe a quae ipsa quo non consequuntur commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, nesciunt! Esse quasi id molestiae modi excepturi quam tempora quaerat ratione minima! Mollitia dolor error, pariatur alias voluptatibus in corrupti veniam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorem atque, eos fuga ullam quas asperiores laudantium nisi expedita nesciunt error officia omnis vitae dolores quam temporibus modi odit consequatur!</p>
         </section>
         <section class="locations">
-            <h2>Если будете в смоленске можете посетить эти места</h2>
+            <h2>На туре вы посетите:</h2>
             <ul class="cards">
                 <li class="card"><img src="img/minipic_cafe/mini1.jpg" alt="img"/><p>Cafe Aboba</p></li>
                 <li class="card"><img src="img/minipic_cafe/mini2.jpg" alt="img"/><p>Cafe Aboba</p></li>
@@ -82,11 +71,22 @@
         <section class="mapBlock">
             <div class="map"></div>
         </section>
+		<section>
+			<h1>Дополнительные материалы</h1>
+			<div class="swiper swiperSecond">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Text</div>
+					<div class="swiper-slide">Text</div>
+					<div class="swiper-slide">Text</div>
+					<div class="swiper-slide">Text</div>
+				</div>
+
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
     </main>
-
-
-
-
+    <script src="scripts/search.js"></script>
+    <script src="scripts/swiper.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
