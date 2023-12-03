@@ -14,5 +14,13 @@ const swiper = new Swiper('.swiperFirst', {
   }
 });
 
-const swiper_second = new Swiper(".swiperSecond", {});
+const swiper_second = new Swiper(".swiperSecond", {
+  direction: 'horizontal',
+  loop: true,
+  
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  }
+});
 
