@@ -34,3 +34,6 @@
 @thisisignitedoreo
 - При необходимости изменить сайт или доки
 
+**06.12.23**
+@bolgaro4ka и @thisisignitedoreo
+ - Багфиксы, небольшие изменения
