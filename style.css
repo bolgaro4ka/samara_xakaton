@@ -147,16 +147,21 @@ header a {
 	display: flex;
 	cursor: pointer;
 	flex-direction: column;
-	justify-content: space-between;
 	border: 3px solid #ddd;
 	border-radius: 10px;
 	padding: 10px;
 	padding-bottom: 8px;
+	width: 200px;
+	z-index: 50;
 }
 
 .card p {
 	margin-top: 8px;
+	margin-bottom: 8px;
 }
+
+.card button {margin-top: auto;
+margin-bottom: 5px;}
 
 .aboutPlace {
 	display: flex;
@@ -191,6 +196,7 @@ header a {
 	text-decoration: none;
 }
 
+
 .placeWrapper img {
 	border-radius: 16px;
 }
@@ -200,7 +206,7 @@ header a {
 }
 
 #placeDescription {
-	font-size: 24px;
+	font-size: 24px; margin: 10px 0 10px 0;
 }
 
 .telegram {
@@ -354,3 +360,75 @@ details div {
 	font-size: 20px;
 }
 
+.reviewsList {
+	display: flex;
+	padding: 16px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.reviewsList > li {
+	width: 512px;
+	height: 160px;
+	padding: 16px;
+	border-radius: 24px;
+	box-shadow: 0 0 16px 0px #ddd;
+	margin-right: 16px;
+	margin-bottom: 16px;
+}
+
+.reviewsList > li:nth-child(2n) {
+	margin-right: 0;
+}
+
+.reviewsList > li:nth-last-child(-n + 2) {
+	margin-bottom: 0;
+}
+
+.author, .author > div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.author p {
+	font-size: 16px;
+}
+
+.author > div img {
+	border-radius: 100%;
+	margin-right: 16px;
+}
+
+.stars {
+	display: flex;
+	flex-direction: row;
+}
+
+.stars > li {
+	margin-left: 4px;
+}
+
+.content {
+	margin-top: 8px;
+	border-radius: 16px;
+	padding: 8px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	margin-top: 16px;
+	justify-content: space-evenly;
+}
+
+#reviews > h2 {
+	text-align: center;
+	margin: 20px 0;
+	font-size: 32px;
+}
+
+#reviews * {list-style: none;}
