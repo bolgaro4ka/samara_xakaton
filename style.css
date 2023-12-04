@@ -432,3 +432,5 @@ details div {
 }
 
 #reviews * {list-style: none;}
+
+.mapBlock {height: 400px; justify-content: center;}
