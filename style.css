@@ -318,6 +318,7 @@ footer p {
 .questions > h2 {
 	text-align: center;
 	font-size: 32px;
+	padding: 0px 0px 10px 0;
 }
 
 details summary {
@@ -332,13 +333,15 @@ details {
 	border: 1px solid #aaa;
 	width: 800px;
 	border-radius: 8px;
-	padding: 4px;
+	padding: 10px;
 	margin-bottom: 4px;
+	margin: 2px;
+
 }
 
 summary {
 	cursor: pointer;
-	font-size: 32px;
+	font-size: 26px;
 }
 
 details[open] summary {
@@ -348,6 +351,6 @@ details[open] summary {
 }
 
 details div {
-	font-size: 24px;
+	font-size: 20px;
 }
 
