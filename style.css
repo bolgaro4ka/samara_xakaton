@@ -376,6 +376,7 @@ details div {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	gap: 10px;
 }
 
 .reviewsList > li {
@@ -384,16 +385,6 @@ details div {
 	padding: 16px;
 	border-radius: 24px;
 	box-shadow: 0 0 16px 0px #ddd;
-	margin-right: 16px;
-	margin-bottom: 16px;
-}
-
-.reviewsList > li:nth-child(2n) {
-	margin-right: 0;
-}
-
-.reviewsList > li:nth-last-child(-n + 2) {
-	margin-bottom: 0;
 }
 
 .author, .author > div {
