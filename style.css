@@ -134,7 +134,7 @@ header a {
 
 .cards {
 	display: flex;
-	width: 1000px;
+	width: 1200px;
 	margin: 0 auto;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -145,7 +145,6 @@ header a {
 
 .card {
 	display: flex;
-	cursor: pointer;
 	flex-direction: column;
 	border: 3px solid #ddd;
 	border-radius: 10px;
@@ -160,8 +159,11 @@ header a {
 	margin-bottom: 8px;
 }
 
-.card button {margin-top: auto;
-margin-bottom: 5px;}
+.card button {
+	cursor: pointer;
+	margin-top: auto;
+	margin-bottom: 5px;
+}
 
 .aboutPlace {
 	display: flex;
@@ -240,10 +242,17 @@ margin-bottom: 5px;}
 }
 
 #map > ymaps {
+	border-radius: 16px;
+}
+
+#map {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 128px;
 	width: 800px;
 	height: 500px;
 	border: 4px solid #aaa;
-	background-color: #696969;
 	border-radius: 16px;
 	margin-top: 16px;
 }
@@ -433,4 +442,3 @@ details div {
 
 #reviews * {list-style: none;}
 
-.mapBlock {height: 400px; justify-content: center;}

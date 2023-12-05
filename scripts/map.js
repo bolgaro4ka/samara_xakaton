@@ -1,6 +1,7 @@
 
-initMap();
+let map = null;
 
+initMap();
 
 function get(uri) {
 	let xhr = new XMLHttpRequest();
@@ -38,10 +39,14 @@ function addMarker(map, coords, settings, ymarker) {
 async function initMap() {
 	await ymaps3.ready;
 
+	let mapEl = document.getElementById("map");
+	mapEl.innerHTML = "";
+	mapEl.style.fontSize = "16px";
+
 	const {YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer} = ymaps3;
 	const {YMapDefaultMarker} = await ymaps3.import('@yandex/ymaps3-markers@0.0.1');
 	
-	const map = new YMap(
+	map = new YMap(
 		document.getElementById('map'),
 
 		{

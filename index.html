@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="https://unpkg.com/accordion-js@latest/dist/accordion.min.css">
 	<link rel="stylesheet" href="style.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -65,16 +64,15 @@
             <div class="placeWrapper">
                 <img id="placeImg" src="img/minipic_dos/mini3_olen.jpg" width="500" height="400"/>
                 <div>
-                    <div id="placeName">Скульптура Олень</div>
-                    <div id="placeDescription">В левой части сада Болонье (если смотреть с пл. Ленина) “бродит” статный олень с ветвистыми рогами.👍 Исторические факты говорят за то, что бронзовая скульптура благородного животного была привезена в Смоленск в 1945 году аж из самой Германии, с дачи рейхсмаршала Г. Геринга, а изначально он “прогуливался” в Восточной Пруссии, у охотничьего замка кайзера Вильгельма II. Большого ажиотажа вокруг не заметили, рога и копыта не тёрли на удачу! Немцы были мастера на такие штуки и на другие тоже.</div>
-          			<a href="javascript:void();">Посмотреть на карте</a>
+                    <div id="placeName">&lt;null&gt;</div>
+                    <div id="placeDescription">&lt;null&gt;</div>
+          			<a href="javascript:void();" onclick="showOnMap();">Посмотреть на карте</a>
 				</div>
             </div>
         </section>
         <section class="mapBlock">
             <h2>Карта</h2>
-            <h2>Карты нет, но вы держитесь ;-)</h2>
-        	<div id="map"></div>
+        	<div id="map">\(OoO)/</div>
 		</section>
 		<section class="more">
 			<h2>Дополнительные материалы</h2>
@@ -234,7 +232,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="scripts/search.js"></script>
     <script src="scripts/swiper.js"></script>
-    <script src="scripts/cards.js"></script>
 	<script src="scripts/map.js"></script>
+    <script src="scripts/cards.js"></script>
 </body>
 </html>
