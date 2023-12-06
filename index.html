@@ -13,221 +13,319 @@
 </head>
 <body>
     <header>
-        <img src="img/logo.png" alt="Logo" class="logoHeader">
-        <ul class="headerList">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Места</a></li>
-            <li><a href="#">О нас</a></li>
-            <li id="search"><input name="searchField" placeholder="Поиск..." id="searchField"/></li>
-			<li><a href="#" id="letsGoSearch"><img src="img/search.svg" alt=""></a></li>
-			<li id="signUp"><a href="register/login.html">Войти</a></li>
-        </ul>
+        <div class="wrapper header__style">
+            <img src="img/logo.png" alt="Logo" class="logoHeader">
+            <ul class="headerList">
+                <li><a class="headLink" href="#programma">Программа</a></li>                
+                <li><a class="headLink" href="#dopMaterial">Дополнительные материалы</a></li>
+                <li><a class="headLink" href="#questions">Вопросы/ответы</a></li>
+                <li><a class="headLink" href="#aboutUs">О нас</a></li>
+                <li><a class="headLink" href="#telegram">Телеграм</a></li>
+                <li><a class="headLink" href="#reviews">Отзывы</a></li>
+                <li id="search"><input name="searchField" placeholder="Поиск..." id="searchField"/></li>
+    			<li><a href="#" id="letsGoSearch"><img src="img/search.svg" alt=""></a></li>
+    			<li id="signUp"><a href="register/login.html">Войти</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="topSlider">
+            <div class="wrapper">
 			<div class="heading">
 				<div>Только посмотрите на эти достопримечательности...</div>
-				<div>Все их вы сможете посетить их на нашем туре по Смоленску!</div>
+				<div>Вы сможете посетить их на нашем туре по Смоленску!</div>
 			</div>
-            <div class="swiperFirst swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="img/pic_for_slider/dostoprimechatelnosti-smolenska.jpg" alt="pictire"/></div>
-                  <div class="swiper-slide"><img src="img/pic_for_slider/optimize.webp" alt="pictire"/></div>
-                  <div class="swiper-slide"><img src="img/pic_for_slider/scale_1200.jpeg" alt="pictire"/></div>
-                  <div class="swiper-slide"><img src="img/minipic_dos/mini13.jpg" alt="pictire"/></div>
-                  <div class="swiper-slide"><img src="img/minipic_cafe/mini2.jpg" alt="pictire"/></div>
-                  <div class="swiper-slide"><img src="img/minipic_theater/mini1.jpg" alt="pictire"/></div>
-                </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiperFirst swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="img/pic_for_slider/dostoprimechatelnosti-smolenska.jpg" alt="pictire"/></div>
+                      <div class="swiper-slide">
+                        <img src="img/pic_for_slider/optimize.webp" alt="pictire"/>
+                    </div>
+                      <div class="swiper-slide">
+                        <img src="img/pic_for_slider/scale_1200.jpeg" alt="pictire"/>
+                    </div>
+                      <div class="swiper-slide">
+                        <img src="img/minipic_dos/mini13.jpg" alt="pictire"/>
+                    </div>
+                      <div class="swiper-slide">
+                        <img src="img/minipic_cafe/mini2.jpg" alt="pictire"/>
+                    </div>
+                      <div class="swiper-slide">
+                        <img src="img/minipic_theater/mini1.jpg" alt="pictire"/>
+                    </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                  </div>
               </div>
         </section>
-        <section class="about">
-            <h2>О нас</h2>
-            <p>Наша миссия сделать каждое путешествие уникальным и незабываемым, предоставляя клиентам возможность погрузиться в красоту и культуру Смоленска. Мы убеждены, что истинное путешествие начинается с заботы о каждой детали, и мы гордимся тем, что создаем маршруты, отражающие богатство и разнообразие этого прекрасного региона. С нами ваше путешествие – это не просто маршрут, а история, которую вы напишете сами. Присоединяйтесь к ТурВектор – вашему путеводителю в мир удивительных открытий!</p>
-        </section>
-        <section class="locations">
-            <h2>На туре вы посетите</h2>
-            <ul class="cards">
-                <li class="card" class="scroll-to"><img class="imgCard" src="img/minipic_cafe/mini1.jpg" alt="img"/><p class="textCard">Cafe Aboba</p><button class="goToPlace">Подробнее</button></li>
-                <li class="card"><img class="imgCard" src="img/minipic_cafe/mini2.jpg" alt="img"/><p class="textCard">Cafe Aboba</p><button  class="goToPlace">Подробнее</button></li>
-                <li class="card"><img class="imgCard" src="img/minipic_cafe/mini3.jpg" alt="img"/><p class="textCard">Cafe Aboba</p><button  class="goToPlace">Подробнее</button></li>
-                <li class="card"><img class="imgCard" src="img/minipic_cafe/mini4.jpg" alt="img"/><p class="textCard">Cafe Aboba</p><button  class="goToPlace">Подробнее</button></li>
-                <li class="card"><img class="imgCard" src="img/minipic_cafe/mini5.jpg" alt="img"/><p class="textCard">Cafe Aboba</p><button  class="goToPlace">Подробнее</button></li>
-                <li class="card"><img class="imgCard" src="img/minipic_cafe/mini6.jpg" alt="img"/><p class="textCard">Cafe Aboba</p><button  class="goToPlace">Подробнее</button></li>
-                <li class="card"><img class="imgCard" src="img/minipic_cafe/mini7.jpg" alt="img"/><p class="textCard">Cafe Aboba</p><button  class="goToPlace">Подробнее</button></li>
-                <li class="card"><img class="imgCard" src="img/minipic_cafe/mini8.jpg" alt="img"/><p class="textCard">Cafe Aboba</p><button  class="goToPlace">Подробнее</button></li>
-                <li class="card"><img class="imgCard" src="img/minipic_dos/mini9.jpg" alt="img"/><p class="textCard">Cafe Aboba</p><button  class="goToPlace">Подробнее</button></li>
-            </ul>
-        </section>
-        <section class="aboutPlace">
-            <h2>О месте</h2>
-            <div class="placeWrapper">
-                <img id="placeImg" src="img/minipic_dos/mini3_olen.jpg" width="500" height="400"/>
-                <div>
-                    <div id="placeName">&lt;null&gt;</div>
-                    <div id="placeDescription">&lt;null&gt;</div>
-          			<a href="javascript:void();" onclick="showOnMap();">Посмотреть на карте</a>
-				</div>
+        
+        <section class="locations" id="programma">
+            <div class="wrapper">
+                <h2>Программа - эти места вы посетите  на нашем туре</h2>
+                <ul class="cards">
+                    <li class="card" class="scroll-to">
+                        <img class="imgCard" src="img/minipic_cafe/mini1.jpg" alt="img"/>
+                        <p class="textCard">Cafe Aboba</p>
+                        <button class="goToPlace">Подробнее</button>
+                    </li>
+                    <li class="card">
+                        <img class="imgCard" src="img/minipic_cafe/mini2.jpg" alt="img"/>
+                        <p class="textCard">Cafe Aboba</p>
+                        <button  class="goToPlace">Подробнее</button>
+                    </li>
+                    <li class="card">
+                        <img class="imgCard" src="img/minipic_cafe/mini3.jpg" alt="img"/>
+                        <p class="textCard">Cafe Aboba</p>
+                        <button  class="goToPlace">Подробнее</button>
+                    </li>
+                    <li class="card">
+                        <img class="imgCard" src="img/minipic_cafe/mini4.jpg" alt="img"/><p class="textCard">Cafe Aboba</p>
+                        <button  class="goToPlace">Подробнее</button>
+                    </li>
+                    <li class="card">
+                        <img class="imgCard" src="img/minipic_cafe/mini5.jpg" alt="img"/><p class="textCard">Cafe Aboba</p>
+                        <button  class="goToPlace">Подробнее</button>
+                    </li>
+                    <li class="card">
+                        <img class="imgCard" src="img/minipic_cafe/mini6.jpg" alt="img"/><p class="textCard">Cafe Aboba</p>
+                        <button  class="goToPlace">Подробнее</button>
+                    </li>
+                    <li class="card">
+                        <img class="imgCard" src="img/minipic_cafe/mini7.jpg" alt="img"/>
+                        <p class="textCard">Cafe Aboba</p>
+                        <button  class="goToPlace">Подробнее</button>
+                    </li>
+                    <li class="card">
+                        <img class="imgCard" src="img/minipic_cafe/mini8.jpg" alt="img"/>
+                        <p class="textCard">Cafe Aboba</p>
+                        <button  class="goToPlace">Подробнее</button>
+                    </li>
+                    <li class="card">
+                        <img class="imgCard" src="img/minipic_dos/mini9.jpg" alt="img"/>
+                        <p class="textCard">Cafe Aboba</p>
+                        <button  class="goToPlace">Подробнее</button>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="mapBlock">
-            <h2>Карта</h2>
-        	<div id="map">\(OoO)/</div>
-		</section>
-		<section class="more">
-			<h2>Дополнительные материалы</h2>
-			<div class="swiper swiperSecond">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/RxzD6zcvkKw?si=rAFuAMSItnJzfvVb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-					<div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/IDYdRoOIluo?si=fyqreOUPU1ZnqDBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-					<div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/2zQInELn1ys?si=B8FlJx0C-FoWoaoN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-					<div class="swiper-slide"><iframe width="560" height="315" src="https://www.youtube.com/embed/QqF0MKyPpew?si=Bhmu9zFKjeis5oEr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-				</div>
 
-				<div class="swiper-pagination"></div>
-			</div>
+        <section class="aboutPlace">
+            <div class="wrapper">
+                <h2>Подробнее о месте посещения</h2>
+                <div class="placeWrapper" id="placeWrapper">
+                    <img id="placeImg" src="img/minipic_dos/mini3_olen.jpg" width="500" height="400"/>
+                    <div>
+                        <div id="placeName">&lt;null&gt;</div>
+                        <div id="placeDescription">&lt;null&gt;</div>
+              			<a class="goMap" href="javascript:void();" onclick="showOnMap();">Посмотреть на карте</a>
+    				</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mapBlock">
+            <div class="wrapper mapBlock__style">
+                <h2>Карта</h2>
+            	<div id="map">Яндекс.Карты временно не работают, попробуйте позже</div>
+            </div>
+		</section>
+		<section class="more" id="dopMaterial">
+            <div class="wrapper">
+    			<h2>Дополнительные материалы</h2>
+                <div class="swiper swiperSecond">
+                  
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IDYdRoOIluo?si=fyqreOUPU1ZnqDBA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2zQInELn1ys?si=B8FlJx0C-FoWoaoN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QqF0MKyPpew?si=Bhmu9zFKjeis5oEr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                   
+                  </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>               
+                  
+
+                </div>
+            </div>
+
 		</section>
         
-        <section class="questions">
-            <h2>Часто задаваемые вопросы</h2>
-			<details>
-			    <summary>Какие туры предлагает ваша компания в Смоленске?</summary>
-				<div>Мы предлагаем разнообразные туры по Смоленску, включая культурные экскурсии, активный отдых на природе и уникальные тематические маршруты.</div>
-			</details>
-			<details>
-			    <summary>Каковы цены на туры в Смоленске?</summary>
-				<div>Цены на туры зависят от их типа и продолжительности. Вы можете ознакомиться с нашим прайс-листом на соответствующей странице сайта или связаться с нашими менеджерами для получения индивидуального расчета.</div>
-			</details>
-			<details>
-			    <summary>Как забронировать тур через ваш сайт?</summary>
-				<div>Для бронирования тура выберите интересующий вас маршрут, укажите даты и количество участников, затем следуйте инструкциям на странице оформления заказа. Мы также готовы помочь вам по телефону или в офисе.</div>
-			</details>
-            <details>
-			    <summary>Могу ли я самостоятельно составить индивидуальный тур?</summary>
-				<div>Да, мы предоставляем услугу индивидуального туризма. Свяжитесь с нашими специалистами, чтобы обсудить ваши предпочтения и создать уникальный маршрут.</div>
-			</details>
-            <details>
-                <summary>Какие включены услуги в стоимость тура?</summary>
-                <div>В стоимость тура включены указанные в программе услуги. Обычно это проезд, проживание, экскурсии и другие заранее оговоренные моменты. Подробности указаны в каждом туре на нашем сайте.</div>
-            </details>
-            <details>
-                <summary>Каковы условия отмены бронирования?</summary>
-                <div> Условия отмены бронирования зависят от типа тура и времени предоставления уведомления. Подробную информацию можно найти в наших правилах отмены или уточнить у наших менеджеров.</div>
-            </details>
-            <details>
-                <summary>Предоставляют ли вы скидки для групп?</summary>
-                <div>Да, мы предоставляем скидки для группных заказов. Размер скидки зависит от размера группы. Дополнительную информацию можно получить, связавшись с нашим отделом продаж.</div>
-            </details>
+        <section class="questions" id="questions">
+            <div class="wrapper questions__style">
+                <h2>Часто задаваемые вопросы</h2>
+    			<details>
+    			    <summary>Какие туры предлагает ваша компания в Смоленске?</summary>
+    				<div>Мы предлагаем разнообразные туры по Смоленску, включая культурные экскурсии, активный отдых на природе и уникальные тематические маршруты.</div>
+    			</details>
+    			<details>
+    			    <summary>Каковы цены на туры в Смоленске?</summary>
+    				<div>Цены на туры зависят от их типа и продолжительности. Вы можете ознакомиться с нашим прайс-листом на соответствующей странице сайта или связаться с нашими менеджерами для получения индивидуального расчета.</div>
+    			</details>
+    			<details>
+    			    <summary>Как забронировать тур через ваш сайт?</summary>
+    				<div>Для бронирования тура выберите интересующий вас маршрут, укажите даты и количество участников, затем следуйте инструкциям на странице оформления заказа. Мы также готовы помочь вам по телефону или в офисе.</div>
+    			</details>
+                <details>
+    			    <summary>Могу ли я самостоятельно составить индивидуальный тур?</summary>
+    				<div>Да, мы предоставляем услугу индивидуального туризма. Свяжитесь с нашими специалистами, чтобы обсудить ваши предпочтения и создать уникальный маршрут.</div>
+    			</details>
+                <details>
+                    <summary>Какие включены услуги в стоимость тура?</summary>
+                    <div>В стоимость тура включены указанные в программе услуги. Обычно это проезд, проживание, экскурсии и другие заранее оговоренные моменты. Подробности указаны в каждом туре на нашем сайте.</div>
+                </details>
+                <details>
+                    <summary>Каковы условия отмены бронирования?</summary>
+                    <div> Условия отмены бронирования зависят от типа тура и времени предоставления уведомления. Подробную информацию можно найти в наших правилах отмены или уточнить у наших менеджеров.</div>
+                </details>
+                <details>
+                    <summary>Предоставляют ли вы скидки для групп?</summary>
+                    <div>Да, мы предоставляем скидки для группных заказов. Размер скидки зависит от размера группы. Дополнительную информацию можно получить, связавшись с нашим отделом продаж.</div>
+                </details>
+            </div>
 		</section>
-        <section class="telegram">
-            <h2>Наш туристический Telegram бот</h2>
-            <div class="telegramTextImg">
-                <img src="img/tg.png" alt="target">
-                    <div class="centers">
-                    <p>Попробуйте нашего телеграм бота, который подскажет вам дополнительную информацию</p>
-                    <div class="telegramTexts">
-                        <div class="centers"><h3>@tg_smolensk_guide_bot</h3><p>Введите</p></div>
-                        <div class="centers"><h3>ИЛИ</h3></div>
-                        <div class="centers"><a href="http://qrcoder.ru" target="_blank"><img src="http://qrcoder.ru/code/?https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&2&0" width="120" height="120" border="0" title="QR код"></a><p>Отсканируйте</p></div>
+        <section class="about" id="aboutUs">
+            <div class="wrapper">
+                <h2>О нас</h2>
+                <p>Наша миссия сделать каждое путешествие уникальным и незабываемым, предоставляя клиентам возможность погрузиться в красоту и культуру Смоленска. Мы убеждены, что истинное путешествие начинается с заботы о каждой детали, и мы гордимся тем, что создаем маршруты, отражающие богатство и разнообразие этого прекрасного региона. С нами ваше путешествие – это не просто маршрут, а история, которую вы напишете сами. Присоединяйтесь к ТурВектор – вашему путеводителю в мир удивительных открытий!</p>
+            </div>
+        </section>
+        <section class="telegram" id="telegram">
+            <div class="wrapper telegram__style">
+                <div class="telegram__leftContent">
+                    <h2>Наш туристический Telegram бот</h2>
+                    <img src="img/tg.png" alt="target">
+                </div>
+                <div class="telegram__rightContent">  
+                           
+                    <p class="telegram__rightHead">Попробуйте нашего телеграм бота, который подскажет вам дополнительную информацию</p>
+                    <div class="telegram__rightContentWrapper"> 
+                    <div class="telegram__link">
+                        <p>Введите</p>
+                        <p>@tg_smolensk_guide_bot</p>                           
+                    </div>                            
+                    <p>или</p>
+                    <div class="telegram__qrCode">
+                        <p>Отсканируйте</p>
+                        <a href="http://qrcoder.ru" target="_blank">
+                        <img src="http://qrcoder.ru/code/?https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&2&0" width="120" height="120" border="0" title="QR код">
+                        </a>
+                    
+                            </div>
+                            </div> 
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="block" id="reviews">
-            <h2 class="heading">Отзывы</h2>
-            
-            <ul class="reviewsList">
-                <li>
-                    <div class="author">
-                        <div>
-                            <img src="img/other/user-0.jpg" width="64" alt="">
-                            <p>Наталья Коровенко, Москва</p>
+            <div class="wrapper reviews__style">
+                <h2 class="heading">Отзывы</h2>
+                
+                <ul class="reviewsList">
+                    <li>
+                        <div class="author">
+                            <div>
+                                <img src="img/other/user-0.jpg" width="64" alt="">
+                                <p>Наталья Коровенко, Москва</p>
+                            </div>
+                            <ul class="stars">
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                            </ul>
                         </div>
-                        <ul class="stars">
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                        </ul>
-                    </div>
-                    <div class="content">
-                        <p>
-                            Отпуск в Смоленске с ТурВектор – это было просто волшебство! Профессиональные гиды, интересные экскурсии и невероятная атмосфера. Спасибо за незабываемые впечатления!
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="author">
-                        <div>
-                            <img src="img/other/user-1.jpg" width="64" alt="">
-                            <p>Наталья Траварубова, Екатеринбург</p>
+                        <div class="content">
+                            <p>
+                                Отпуск в Смоленске с ТурВектор – это было просто волшебство! Профессиональные гиды, интересные экскурсии и невероятная атмосфера. Спасибо за незабываемые впечатления!
+                            </p>
                         </div>
-                        <ul class="stars">
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star-inactive.png" width="16" alt=""></li>
-                        </ul>
-                    </div>
-                    <div class="content">
-                        <p>
-                            Спасибо за романтический уикенд в Смоленске! Отель, ужин на закате и веселая прогулка по старому городу – все было прекрасно! ТурВектор создает атмосферу любви и уюта.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="author">
-                        <div>
-                            <img src="img/other/user-3.jpg" width="64" alt="">
-                            <p>Василий Генадьевич, Ростов-на-Дону</p>
+                    </li>
+                    <li>
+                        <div class="author">
+                            <div>
+                                <img src="img/other/user-1.jpg" width="64" alt="">
+                                <p>Наталья Траварубова, Екатеринбург</p>
+                            </div>
+                            <ul class="stars">
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star-inactive.png" width="16" alt=""></li>
+                            </ul>
                         </div>
-                        <ul class="stars">
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star-inactive.png" width="16" alt=""></li>
-                        </ul>
-                    </div>
-                    <div class="content">
-                        <p>
-                            Семейный отдых с ТурВектор – это было то, что нам нужно! Дети в восторге от интересных мероприятий, мы – от красивых видов и отдыха без забот. Отличная работа команды!
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="author">
-                        <div>
-                            <img src="img/other/user-2.jpg" width="64" alt="">
-                            <p>Иван Краснобородько, Челябинск</p>
+                        <div class="content">
+                            <p>
+                                Спасибо за романтический уикенд в Смоленске! Отель, ужин на закате и веселая прогулка по старому городу – все было прекрасно! ТурВектор создает атмосферу любви и уюта.
+                            </p>
                         </div>
-                        <ul class="stars">
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                            <li><img src="img/other/star.png" width="16" alt=""></li>
-                        </ul>
-                    </div>
-                    <div class="content">
-                        <p>
-                            Путешествие с ТурВектор – это был настоящий отдых от повседневности. Профессиональные гиды, увлекательные истории и множество впечатлений. Обязательно приедем еще!
-                        </p>
-                    </div>
-                </li>
-            </ul>
-
+                    </li>
+                    <li>
+                        <div class="author">
+                            <div>
+                                <img src="img/other/user-3.jpg" width="64" alt="">
+                                <p>Василий Генадьевич, Ростов-на-Дону</p>
+                            </div>
+                            <ul class="stars">
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star-inactive.png" width="16" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Семейный отдых с ТурВектор – это было то, что нам нужно! Дети в восторге от интересных мероприятий, мы – от красивых видов и отдыха без забот. Отличная работа команды!
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="author">
+                            <div>
+                                <img src="img/other/user-2.jpg" width="64" alt="">
+                                <p>Иван Краснобородько, Челябинск</p>
+                            </div>
+                            <ul class="stars">
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                                <li><img src="img/other/star.png" width="16" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Путешествие с ТурВектор – это был настоящий отдых от повседневности. Профессиональные гиды, увлекательные истории и множество впечатлений. Обязательно приедем еще!
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         
     </main>
     <footer>
-        <img src="img/logo.png" alt="Logo" class="logoHeader">
-        <ul class="headerList">
-        	<p>Сайт разработан Егором Горгуном (@thisisignitedoreo) и Никитой Федосовым (@bolgaro4ka)</p>
-		</ul>
+        <div class="wrapper footer_style">
+            <img src="img/logo.png" alt="Logo" class="logoHeader">
+            <ul class="headerList">
+            	<p>Сайт разработан Егором Горгуном (@thisisignitedoreo) и Никитой Федосовым (@bolgaro4ka)</p>
+    		</ul>
+        </div>
     </footer>
+    <div class="wrapper">       
+        <div class="arrowOnTop">
+            <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="paint0_linear_504_1481" gradientUnits="userSpaceOnUse" x1="12" x2="12" y1="3" y2="21"><stop offset="0" stop-color="#feb692"></stop><stop offset="1" stop-color="#ea5455"></stop></linearGradient><path clip-rule="evenodd" d="m14.9703 3.3437c-1.9537-.45827-3.9869-.45827-5.94055 0-2.82134.66179-5.02426 2.86471-5.68605 5.68605-.45827 1.95365-.45827 3.98685 0 5.94055.6618 2.8213 2.86472 5.0242 5.68605 5.686 1.95365.4583 3.98685.4583 5.94055 0 2.8213-.6618 5.0242-2.8647 5.686-5.686.4583-1.9537.4583-3.9869 0-5.94055-.6618-2.82133-2.8647-5.02426-5.686-5.68605zm-5.78778 8.1233c-.23432-.2343-.23432-.6142 0-.8485l2.39318-2.39326c.1126-.11253.2652-.17574.4243-.17574s.3117.06321.4243.17574l2.3932 2.39326c.2343.2343.2343.6142 0 .8485s-.6142.2343-.8486 0l-1.3689-1.369v5.2525c0 .3314-.2686.6-.6.6s-.6-.2686-.6-.6v-5.2525l-1.369 1.369c-.23427.2343-.61417.2343-.84848 0z" fill="url(#paint0_linear_504_1481)" fill-rule="evenodd"></path></svg>
+        </div>
 	<script src="https://api-maps.yandex.ru/v3/?apikey=84ae1a7f-6b6d-4ce0-8f10-8c781454c02a&lang=ru_RU"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="scripts/search.js"></script>

@@ -15,9 +15,9 @@ function letsgo(e) {
     document.getElementById('placeName').innerText=POINTS[(e.target.id)]['name'];
     document.getElementById('placeDescription').innerText=POINTS[(e.target.id)]['description'];
     document.getElementById('placeImg').src=POINTS[(e.target.id)]['img'];
-    // Я попытался сделать плавный переход через JQuery, но у меня не получилось, может у тебя получится :) (JQuery уже подключён)
-	// иди ты нахер со своим jquery
-	selected = e.target.id;
+   	selected = e.target.id;
+   
+ 
 }
 
 letsgo({target: {id: 0}})
@@ -32,5 +32,51 @@ function showOnMap() {
 }
 
 for (let i = 0; i<cards.length; i++){
-    document.getElementsByClassName('goToPlace')[i].addEventListener('click', letsgo, true)
+    document.getElementsByClassName('goToPlace')[i].addEventListener('click', letsgo, true);
+    
 }
+
+  let onTopButon = document.querySelector('.arrowOnTop')
+
+  onTopButon.addEventListener('click', function() {
+  window.scrollTo({
+  top: 150,
+  left: 0,
+  behavior: 'smooth'
+});
+})
+
+  const smoothLinks = document.querySelectorAll('.headLink');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+
+
+const xxxButton = document.querySelectorAll('.goToPlace');
+
+
+ xxxButton.forEach((e) => {
+    
+  e.addEventListener('click', function() {
+  document.querySelector("#placeWrapper").scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+})
+});
+
+const goMapButton = document.querySelector('.goMap');
+goMapButton.addEventListener('click', function() {
+  document.querySelector(".mapBlock").scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+})
